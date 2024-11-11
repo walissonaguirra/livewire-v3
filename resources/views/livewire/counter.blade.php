@@ -5,4 +5,6 @@
     <x-primary-button wire:click="decrement">-</x-primary-button>
 
     <p>{{ $firstName }} {{ $lastName }}</p>
+
+    <x-text-input wire:model.live="count"/>
 </div>
