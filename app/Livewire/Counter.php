@@ -8,9 +8,18 @@ class Counter extends Component
 {
     public $count = 1;
 
+    public $firstName = '';
+
+    public $lastName = '';
+
     public function mount()
     {
         $this->count = 100;
+
+        $this->fill([
+            'firstName' => 'Walisson',
+            'lastName' => 'Aguirra',
+        ]);
     }
 
     public function increment()
@@ -20,7 +29,7 @@ class Counter extends Component
 
     public function decrement()
     {
-        $this->count -=10;
+        $this->count -= 10;
     }
 
     public function render()

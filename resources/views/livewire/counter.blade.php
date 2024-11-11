@@ -3,4 +3,6 @@
 
     <x-primary-button wire:click="increment">+</x-primary-button>
     <x-primary-button wire:click="decrement">-</x-primary-button>
+
+    <p>{{ $firstName }} {{ $lastName }}</p>
 </div>
